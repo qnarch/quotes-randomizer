@@ -3,7 +3,7 @@
 
 // Function that returns a random quote in string
 function ret_rand_quote() {
-    $file_cont = file_get_contents('./quotes.txt', FILE_USE_INCLUDE_PATH);
+    $file_cont = file_get_contents('./quotes-randomizer/quotes.txt', FILE_USE_INCLUDE_PATH);
 
     // PHP won't recognize '\n' as newline. See http://php.net/manual/en/language.types.string.php#language.types.string.syntax.single
     $quote_arr = explode("\n", $file_cont);
